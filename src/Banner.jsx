@@ -1,5 +1,11 @@
 import React from "react";
 
+import desktopImg from "./assets/images/image-web-3-desktop.jpg";
+import mobileImg from "./assets/images/image-web-3-mobile.jpg";
+import retroImg from "./assets/images/image-retro-pcs.jpg";
+import topLaptopImg from "./assets/images/image-top-laptops.jpg";
+import gamingImg from "./assets/images/image-gaming-growth.jpg";
+
 function Banner() {
   return (
     <div>
@@ -8,14 +14,14 @@ function Banner() {
         <div className="w-full md:w-2/3">
           {/* Desktop Image */}
           <img
-            src="src/assets/images/image-web-3-desktop.jpg"
+            src={desktopImg}
             className="hidden md:block w-full h-[20rem] object-cover"
             alt="Desktop Banner"
           />
 
           {/* Mobile Image */}
           <img
-            src="src/assets/images/image-web-3-mobile.jpg"
+            src={mobileImg}
             className="block md:hidden w-full h-[20rem] object-cover"
             alt="Mobile Banner"
           />
@@ -51,7 +57,7 @@ function Banner() {
           <h3 className="text-yellow-500 font-bold p-3 text-3xl ml-4">New</h3>
 
           <div className="pl-5 pr-5">
-            <div className="text-white border-b-2 p-8 text-align-left">
+            <div className="text-white border-b-2 p-8">
               <a className="hover:text-amber-300 cursor-pointer text-xl">
                 Hydrogen VS Electric Cars
               </a>
@@ -70,7 +76,7 @@ function Banner() {
               </p>
             </div>
 
-            <div className="text-white  p-8">
+            <div className="text-white p-8">
               <a className="hover:text-amber-300 cursor-pointer text-xl">
                 Is VC Funding Drying Up?
               </a>
@@ -82,15 +88,16 @@ function Banner() {
           </div>
         </div>
       </div>
+
       {/* Bottom Section: Article Panel */}
-      <div className=" flex flex-col md:flex-row md:w-full mt-5">
-        <div className="bg-white w-full md:w-2/3 p-5 flex flex-row md:flex-row gap-3">
+      <div className="flex flex-col md:flex-row md:w-full mt-5">
+        <div className="bg-white w-full md:w-2/3 p-5 flex flex-row gap-3">
           <img
-            src="src/assets/images/image-retro-pcs.jpg"
+            src={retroImg}
             alt="Retro PCs"
-            className="object-cover  md:w-[8rem] md:h-[8rem] w-[5rem] h-auto"
+            className="object-cover md:w-[8rem] md:h-[8rem] w-[5rem] h-auto"
           />
-          <div className="flex flex-col  md:flex-col">
+          <div className="flex flex-col">
             <h2 className="text-red-600 font-extrabold text-3xl">01</h2>
             <h3 className="font-extrabold text-xl mt-2">Reviving Retro PCs</h3>
             <p className="text-gray-500 text-md mt-2">
@@ -98,11 +105,12 @@ function Banner() {
             </p>
           </div>
         </div>
-        <div className="bg-white w-full md:w-2/3 p-5 flex flex-row md:flex-row gap-3">
+
+        <div className="bg-white w-full md:w-2/3 p-5 flex flex-row gap-3">
           <img
-            src="src/assets/images/image-top-laptops.jpg"
+            src={topLaptopImg}
             alt="Top Laptop"
-            className="object-cover  md:w-[8rem] md:h-[8rem] w-[5rem] h-auto"
+            className="object-cover md:w-[8rem] md:h-[8rem] w-[5rem] h-auto"
           />
           <div>
             <h2 className="text-red-600 font-extrabold text-3xl">02</h2>
@@ -114,9 +122,10 @@ function Banner() {
             </p>
           </div>
         </div>
-        <div className="bg-white w-full md:w-2/3 p-5 flex flex-row md:flex-row gap-3">
+
+        <div className="bg-white w-full md:w-2/3 p-5 flex flex-row gap-3">
           <img
-            src="src/assets/images/image-gaming-growth.jpg"
+            src={gamingImg}
             alt="Gaming Growth"
             className="object-cover md:w-[8rem] md:h-[8rem] w-[5rem] h-auto"
           />
